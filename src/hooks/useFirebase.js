@@ -6,6 +6,9 @@ initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
+//     const history = useHistory();
+//   const location = useLocation();
+//   const { from } = location.state || { from: { pathname: "/" } };
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -16,6 +19,7 @@ const useFirebase = () => {
             .then(result => {
                 console.log(result.user)
                 setUser(result.user);
+                // history.replace(from);
             })
             .finally(() => setIsLoading(false));
     }

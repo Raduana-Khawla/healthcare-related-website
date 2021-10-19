@@ -17,11 +17,13 @@ const Header = () => {
     <img className="d-inline-block align-top rounded-circle"
           src="https://scontent.fdac27-1.fna.fbcdn.net/v/t1.6435-9/126959781_825855454915411_753369467968966823_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=8ChPTA6sqWIAX9-bF3s&_nc_ht=scontent.fdac27-1.fna&oh=496152b27eaefaca51d8e89d7692ff7e&oe=61915807"
       alt="First slide"
-          width="100"
-          height="80"
+          width="80"
+          height="60"
         />{' '}
-   <div> <span className="design">Family Care Dental Zone</span>
-    <p>@Familycaredentalzone  · Cosmetic Dentist</p></div>
+   <div> <span className="design">FCDZ</span>
+    {/* <p>@Familycaredentalzone
+    <br/>.Cosmetic Dentist</p>*/}
+    </div> 
     </div>
     </Navbar.Brand>
     <Navbar.Toggle />
