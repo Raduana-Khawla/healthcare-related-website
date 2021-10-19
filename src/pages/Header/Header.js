@@ -23,19 +23,17 @@ const Header = () => {
     Family Care Dental Zone</Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#about">About</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#news">News</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#notFound">NotFound</Nav.Link>
-                        
+                        <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/about">About</Nav.Link>
+                        <Nav.Link as={HashLink} to="/services">Services</Nav.Link>
+                        <Nav.Link as={HashLink} to="/news">News</Nav.Link>
                         {user?.email ?
                            <button onClick={logOut} variant="light">Logout</button>
                             :
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>}
-
+                        <Nav.Link as={HashLink} to="/notFound">NotFound</Nav.Link>
                         <Navbar.Text>
-                            Signed in as: <a href="#login">{user?.name}</a>
+                            Signed in as: <a href="/login">{user?.name}</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
     </Container>

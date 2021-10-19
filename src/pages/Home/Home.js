@@ -3,15 +3,11 @@ import { Carousel } from "react-bootstrap";
 import banner1 from '../../images/banner1.jpg';
 import banner2 from '../../images/banner2.jpg';
 import banner3 from '../../images/banner3.jpg';
-import About from "../About/About";
-import News from "../News/News";
-import NotFound from "../NotFound/Notfound";
-import Service from "../Service/Service";
 import Services from "../Services/Services";
 
 const Home=()=>{
     return(
-   <>
+   <div id="home">
        <Carousel>
   <Carousel.Item>
     <img
@@ -49,12 +45,8 @@ const Home=()=>{
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-   <About></About>
-   <Services></Services>
-   <News></News>
-   <NotFound></NotFound>
-
-   </>
+<Services></Services>
+   </div>
     )
 }
 

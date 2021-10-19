@@ -10,6 +10,7 @@ import ServiceDetail from './pages/ServiceDetail/ServiceDetail';
 import Services from './pages/Services/Services';
 import PrivetRoute from './components/Shared/PrivateRoute/PrivateRoute';
 import Login from './components/Shared/Login';
+import Register from './components/Register/Register';
 ;
 
 function App() {
@@ -27,9 +28,6 @@ function App() {
         <Route path="/about">
         <About></About>
         </Route>
-        <Route path="/login">
-        <Login></Login>
-        </Route>
         <PrivetRoute
         path="/bookService/:id">
          <ServiceDetail></ServiceDetail>
@@ -37,7 +35,13 @@ function App() {
         <Route path="/news">
           <News></News>
         </Route>
-        <Route exact path="*">
+        <Route path="/login">
+        <Login></Login>
+        </Route>
+        <Route path="/register">
+       <Register></Register>
+        </Route>
+        <Route path="*">
           <NotFound></NotFound>
         </Route>
       </Switch>

@@ -1,13 +1,15 @@
 import React from 'react';
 import BannerImage from '../../images/Banner.jpg';
 import useAuth from '../../hooks/useAuth';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const {signInUsingGoogle} = useAuth()||{};
     return (
         <div className=" container">
             <div className="row align-items-center" style={{ height: "100vh" }}>
-                <div className="col-md-6 shadow p-5">
+              <div className="col-md-6 col-sm-12 shadow p-5">
+                <h3>Login</h3>
                     <div className="form-group">
                         <label htmlFor="">User Name</label>
                         <input type="text" className="form-control" />
@@ -19,15 +21,20 @@ const Login = () => {
                     <div className="form-group">
                         <label htmlFor="" className="text-danger">Forgot your password?</label>
                     </div>
-                    <div className="from-group mt-5">
+                    <div className="mt-3">
+                        <input type="submit" value="submit" />
+                    </div>
+                    <p className="mt-3">new to dental-clinic?<Link to="/register">Create Account</Link></p>
+                    <br />
+                    <div className="from-group mt-3">
                         <button onClick={signInUsingGoogle} className="btn btn-primary" >Google Sign in</button>
                     </div>
                 </div>
-                <div className="col-md-6 d-none d-md-block">
+                <div className="col-md-6 col-sm-12 d-none d-md-block">
                     <img className="img-fluid" src={BannerImage} alt="" />
                 </div>
+              </div>
             </div>
-        </div>
     );
 };
 
