@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Service from "../Service/Service";
+import './Services.css';
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -15,10 +16,10 @@ const Services = () => {
     },[])
 
    return(
-    <section id="book-ride" className="mt-5 container">
+    <section className="container my-5 color">
     <p className="text-center fw-bolder">Dental Services</p>
     <h2 className="text-center fw-bolder">Our <span style={{ color: '#ff4d30' }}>Services</span></h2>
-    <p className="text-center">To contribute to positive change and achieve our <br/> sustainability goals with many extraordinary</p>
+    <p className="text-center text-black">"Life is short,so smile while you still have teeth."</p>
 
     {/* render Services from server side */}
     <div className="row">

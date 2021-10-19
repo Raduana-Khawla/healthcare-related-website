@@ -27,7 +27,7 @@ const Login = () => {
                     <p className="mt-3">new to dental-clinic?<Link to="/register">Create Account</Link></p>
                     <br />
                     <div className="from-group mt-3">
-                        <button onClick={signInUsingGoogle} className="btn btn-primary" >Google Sign in</button>
+                        <button className="btn btn-primary" onClick={signInUsingGoogle} >Google Sign in</button>
                     </div>
                 </div>
                 <div className="col-md-6 col-sm-12 d-none d-md-block">

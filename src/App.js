@@ -11,12 +11,14 @@ import Services from './pages/Services/Services';
 import PrivetRoute from './components/Shared/PrivateRoute/PrivateRoute';
 import Login from './components/Shared/Login';
 import Register from './components/Register/Register';
-;
+import AuthProvider from './context/AuthProvider';
+import Footer from './components/Shared/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-    <Router>
+   <AuthProvider>
+   <Router>
     <Header></Header>
       <Switch>
         <Route exact path="/">
@@ -27,6 +29,9 @@ function App() {
         </Route>
         <Route path="/about">
         <About></About>
+        </Route>
+        <Route path="/services">
+        <Services></Services>
         </Route>
         <PrivetRoute
         path="/bookService/:id">
@@ -41,12 +46,13 @@ function App() {
         <Route path="/register">
        <Register></Register>
         </Route>
-        <Route path="*">
+        <Route exact path="*">
           <NotFound></NotFound>
         </Route>
       </Switch>
+      <Footer></Footer>
     </Router>
-      
+   </AuthProvider>
     </div>
   );
 }

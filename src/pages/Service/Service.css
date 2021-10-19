@@ -1,5 +1,11 @@
+.service{
+    background-color: rgb(23, 3, 41);
+}
 .service:hover img{
     overflow: hidden;
     transform: scale(1.2);
     transition: transform 1s;
+}
+.display{
+    background-color: bisque;
 }
