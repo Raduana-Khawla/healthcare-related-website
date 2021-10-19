@@ -9,8 +9,8 @@ const Header = () => {
   const {user,logOut} = useAuth()||{};
 //    console.log(user);
     return(
-       <div className="me-5">
-            <Navbar className="p-3" bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
+       <div>
+            <Navbar className="p-3 bg-danger" variant="dark" sticky="top" collapseOnSelect expand="lg">
     <Container>
     <Navbar.Brand href="#home">
     <div className="d-flex">
@@ -20,20 +20,21 @@ const Header = () => {
           width="100"
           height="80"
         />{' '}
-    <span className="design">Family Care Dental Zone</span>
+   <div> <span className="design">Family Care Dental Zone</span>
+    <p>@Familycaredentalzone  · Cosmetic Dentist</p></div>
     </div>
     </Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
-        <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
-        <Nav.Link as={HashLink} to="/about">About</Nav.Link>
-        <Nav.Link as={HashLink} to="/services">Services</Nav.Link>
-        <Nav.Link as={HashLink} to="/news">News</Nav.Link>
+        <Nav.Link as={HashLink} to="/home"><span id="color">Home</span></Nav.Link>
+        <Nav.Link as={HashLink} to="/about"><span id="color">About</span></Nav.Link>
+        <Nav.Link as={HashLink} to="/services"><span id="color">Services</span></Nav.Link>
+        <Nav.Link as={HashLink} to="/news"><span id="color">News</span></Nav.Link>
         {user?.email ?
         <button onClick={logOut} variant="light">Logout</button>
-        :<Nav.Link as={Link} to="/login">Login</Nav.Link>}
-        <Nav.Link as={HashLink} to="/notFound">NotFound</Nav.Link>
-        <Navbar.Text> Signed in as: <a href="#login">{user?.displayName}</a> </Navbar.Text> 
+        :<Nav.Link as={Link} to="/login"><span id="color">Login</span></Nav.Link>}
+        <Nav.Link as={HashLink} to="/notFound"><span id="color">NotFound</span></Nav.Link>
+        <Navbar.Text><span id="color">Signed in as:</span>  <a href="#login">{user?.displayName}</a> </Navbar.Text> 
      </Navbar.Collapse>
     </Container>
   </Navbar>
