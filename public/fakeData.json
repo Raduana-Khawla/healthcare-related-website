@@ -1,0 +1,45 @@
+[
+    {
+        "id": "1",
+        "name": "Smile Makeover & Aesthetic",
+        "time": "1 hour·Price varies",
+        "description": "To correct spacing & irregularities",
+        "imageURL": "https://i.ibb.co/gS9P9PW/services1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Consultation",
+        "time": "15 minutes and up",
+        "description": "Including Regular Oral Check-up",
+        "imageURL": "https://i.ibb.co/k20k7yN/services2.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Root Canal Treatment",
+        "time": "45 minutes and up.Price Varies",
+        "description": "We Perform RCT With Advanced Technology.",
+        "imageURL": "https://i.ibb.co/X3N9J1t/services3.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Pediatric Dental Care",
+        "time": "30 minutes.Price Varies",
+        "description": "Pulpectomy/Pulpotomy/Filling/Extraction of Teeth.",
+        "imageURL": "https://i.ibb.co/mJ0wZ9b/services4.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Cosmetic/Laser Filling",
+        "time": "30 minutes.Price Varies",
+        "description": "For Cavity Repair.",
+        "imageURL": "https://i.ibb.co/SKjXZmT/services5.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Dental Cap/Crown",
+        "time": "30 minutes · According To Lab Charges.",
+        "description": "Missing Teeth Replacement Permanently.",
+        "imageURL": "https://i.ibb.co/DwZ8r6J/services6.jpg"
+    }
+    
+]
