@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './ServiceDetail.css';
 
 
 const ServiceDetail = () => {
@@ -15,18 +14,21 @@ const ServiceDetail = () => {
     const Details = data.filter(detail => detail.id === id);
     
     return (
+        <>
+        <h2>Service Details</h2>
         <div className="m-5 d-flex justify-content-center align-items-center">
-        <div className="card w-50 h-75 text-center rounded showOff">
+        <div className="card w-50 h-75 text-center rounded title">
           <div className="d-flex justify-content-center align-items-center h-50 p-2">
                 <img src={Details[0]?.imageURL} className="card-img-top h-50 w-50" alt="" />
             </div>
-       <div className="text-white">
+       <div className="text-dark">
        <h3>Name : {Details[0]?.name}</h3>
         <h5>price : {Details[0]?.time}</h5>
         <p>description : {Details[0]?.description}</p>
        </div>
     </div>
     </div>
+    </>
     );
 };
 

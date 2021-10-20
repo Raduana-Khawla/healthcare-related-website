@@ -8,7 +8,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className="bg-danger py-5">
+        <footer className="py-5">
             <div className="container">
                 <div className="row d-flex justify-content-center align-items-center text-white">
                     <div className="col-md-4 d-flex bg-dark p-3 rounded">
@@ -40,27 +40,25 @@ const Footer = () => {
                     </Link>
                 </li>
             </ul>
-        
-                        </div>
-                    </div>
-                    <div className="col-md-4">
-                       <div className="rounded-circle p-5 bg-dark">
-                       <h4>About Us</h4>
-                        <p>Generally, the most common problems that patients face in dental clinics are bad breath and gingivitis, bleeding gums or gingivitis.
-To solve all these problems, we advise our esteemed patients to use scaling-polishing, curative treatment as well as an effective toothpaste.</p>
-                       </div>
-                       <br />
-                        <div className='d-flex justify-content-evenly' style={{fontSize:'2em'}}>
-                            <FontAwesomeIcon icon={faFacebook}/>
-                            <FontAwesomeIcon icon={faInstagram}/>
-                            <FontAwesomeIcon icon={faTwitter}/>
-                            <FontAwesomeIcon icon={faWhatsapp}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p className="mb-0  text-center text-white">Family Care Dental Zone © 2021</p>
-        </footer>
+       </div>
+    </div>
+    <div className="col-md-4">
+     <div className="rounded-circle p-5 bg-dark">
+        <h4>About Us</h4>
+        <p className="">Generally, the most common problems that patients face in dental clinics are bad breath and gingivitis, bleeding gums or gingivitis.To solve all these problems, we advise our esteemed patients to use scaling-polishing, curative treatment as well as an effective toothpaste.</p>
+     </div>
+        <br />
+        <div className='d-flex justify-content-evenly'    style={{fontSize:'2em'}}>
+           <FontAwesomeIcon icon={faFacebook}/>
+           <FontAwesomeIcon icon={faInstagram}/>
+           <FontAwesomeIcon icon={faTwitter}/>
+           <FontAwesomeIcon icon={faWhatsapp}/>
+         </div>
+        </div>
+       </div>
+     </div>
+    <p className="mb-0  text-center text-white">Family Care Dental Zone © 2021</p>
+</footer>
     );
 };
 
