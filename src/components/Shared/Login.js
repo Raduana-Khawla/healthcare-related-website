@@ -1,11 +1,21 @@
 import React from 'react';
 import BannerImage from '../../images/Banner.jpg';
 import useAuth from '../../hooks/useAuth';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 
 const Login = () => {
     
-    const {signInUsingGoogle} = useAuth()||{};
+    const {signInUsingGoogle} = useAuth()||{}; 
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/ServiceDetail';
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    } 
     return (
         <div className=" container">
             <div className="row align-items-center" style={{ height: "100vh" }}>
@@ -29,9 +39,10 @@ const Login = () => {
                     </div>
                     <p className="mt-3">new to dental-clinic?<Link to="/register"><span className="text-white">Create Account</span></Link></p>
                     <br />
-                    <div className="from-group mt-3">
-                        <button className="btn btn-primary" onClick={signInUsingGoogle} >Google Sign in</button>
-                    </div>
+                    <button
+                    className="btn-primary"
+                    onClick={handleGoogleLogin}
+                >Google Sign In</button>
                 </div>
                 <div className="col-md-6 col-sm-12 d-none d-md-block">
                     <img className="img-fluid" src={BannerImage} alt="" />

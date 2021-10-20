@@ -6,7 +6,7 @@ Dental Clinic.
 
 Family Care Dental Zone.
 
-Live-site-link: https://laughing-khorana-447eee.netlify.app/
+Live-site-link: https://dental-clinic-653ae.web.app/
 
 # Project of Dental Clinic Services Website.
 

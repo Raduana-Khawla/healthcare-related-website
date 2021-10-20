@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-
 const ServiceDetail = () => {
     const {id} = useParams();
     const [data , setData] = useState([]);
@@ -10,9 +9,7 @@ const ServiceDetail = () => {
         .then(res => res.json())
         .then(data => setData(data))
     },[])
-
-    const Details = data.filter(detail => detail.id === id);
-    
+  const Details = data.filter(detail => detail.id === id); 
     return (
         <>
         <h2>Service Details</h2>

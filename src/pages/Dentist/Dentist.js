@@ -9,8 +9,7 @@ const Dentist=()=>{
         <div className="">
                 <img className="img-fluid w-75 rounded" src={aboutImage} alt="" />
             </div>
-        </div>
-              
+        </div>       
            
     )
 }

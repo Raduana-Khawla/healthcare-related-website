@@ -1,7 +1,7 @@
-.service{
+.service1{
     background-color: slategray;
 }
-.service:hover img{
+.service1:hover{
     overflow: hidden;
     transform: scale(1.2);
     transition: transform 1s;
