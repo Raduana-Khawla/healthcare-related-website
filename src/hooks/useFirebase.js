@@ -6,9 +6,7 @@ initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
-//     const history = useHistory();
-//   const location = useLocation();
-//   const { from } = location.state || { from: { pathname: "/" } };
+    const [error, setError] = useState("");
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -17,9 +15,13 @@ const useFirebase = () => {
         setIsLoading(true);
         signInWithPopup(auth, googleProvider)
             .then(result => {
-                console.log(result.user)
                 setUser(result.user);
-                // history.replace(from);
+                setError("");
+                // window.location.reload();
+                // history.pushState(redirect_url);
+            })
+            .catch(error=>{
+               setError(error.message);
             })
             .finally(() => setIsLoading(false));
     }

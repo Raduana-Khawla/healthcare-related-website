@@ -31,26 +31,27 @@ const News=()=>{
              </div>
         </div>
     
-        <section className="title2">
-        
-        <h1>Legend's Speech</h1>
-       <div className="d-flex">
-       <div className="my-5 col-md-6 col-sm-12 p-5 justify-content-center align-aitems-center text-center">
+  <section className="title2">
+    <h1 className="pt-3">Legend's Speech</h1>
+       <div className="row">
+             <div className="col-md-6 p-3 my-5">
                 <p><span className="text-white">"A smile adorns a person. Dentists are like jewelers. I am glad that I can decorate people even in this way. You don’t have to brush your teeth — just the ones you want to keep.” Dentistry is not expensive, neglect is. Being a famous designer is like being a famous dentist."</span></p>
                 <h5>Richard Scott</h5>
                 <h6>Dentist-Orthodontist</h6>
-                </div>
-                <div className="col-md-6 col-sm-12 m-3 p-3 mx-3">
-                    <img className="img-fluid w-75 h-75" src="https://scontent.fdac27-1.fna.fbcdn.net/v/t1.6435-9/167319494_3905784519513254_7586299318240073406_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LYjQE-cVNeQAX-CHhIi&_nc_ht=scontent.fdac27-1.fna&oh=cfb5e5af9adb03a05feebd3abf51e20a&oe=61931D69" alt="" />
-                </div>
             </div>
-            </section>
-            <div className="title3 my-3">
+             <div className="col-md-6">
+                    <img className="img-fluid w-75 h-75" src="https://scontent.fdac27-1.fna.fbcdn.net/v/t1.6435-9/167319494_3905784519513254_7586299318240073406_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LYjQE-cVNeQAX-CHhIi&_nc_ht=scontent.fdac27-1.fna&oh=cfb5e5af9adb03a05feebd3abf51e20a&oe=61931D69" alt="" />
+            </div>
+        </div>
+    </section>
+         <div className="title3 my-3">
             <h2><span className="text-white" >Blogs</span></h2>
                 <img className="img-fluid w-75 h-75 mb-3" src="https://camo.envatousercontent.com/b2f2181349c345a9b05a603518fb56e44188ea82/687474703a2f2f636d736d6173746572732e6e65742f66696c65732f64656e74612f342e6a7067" alt="" />
-            </div> 
-            </>
+        </div> 
+         </>
     );
 }
 
 export default News;
+// justify-content-center align-aitems-center text-center
+// col-sm-12 m-3 p-3 mx-3

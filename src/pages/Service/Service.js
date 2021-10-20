@@ -1,4 +1,6 @@
 import React from "react";
+import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import './Service.css';
 
@@ -14,13 +16,28 @@ const Service=(props)=>{
                 <h5 className="card-title text-light">{name}</h5>
                 <p className="text-light">{description}</p>
             </div>
-            <div className="card-footer">
-                <div className="d-flex align-items-center justify-content-between ">
-                    <h3 className="text-warning fw-bold">{time}</h3>
-                    <Link to={`/bookService/${id}`}>
-                        <button className="btn btn-success">Details</button>
+            <div>
+             <div className="d-flex justify-content-between m-3 list-unstyled">
+                <div>
+                    <Link to="/" style={{textDecoration:'none'}} className="text-white">
+                        <FontAwesomeIcon icon={faPhoneAlt} /> <span>01682-683811</span>
                     </Link>
                 </div>
+                <div>
+                    <Link to="/" style={{textDecoration:'none'}} className="text-white">
+                        <FontAwesomeIcon icon={faEnvelope} /> 
+                        <span className="ms-3">Envelop</span>
+                    </Link>
+                </div>
+                </div>
+                </div>
+                <div className="d-flex align-items-center justify-content-between">
+                    <h3 className="text-warning fw-bold">{time}</h3>
+                </div>
+                <div className="mb-2">
+                   <Link to={`/bookService/${id}`}>
+                        <button className="btn btn-success">Details</button>
+                    </Link>
             </div>
         </div>
     </div>

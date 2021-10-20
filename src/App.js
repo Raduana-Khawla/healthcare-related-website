@@ -27,9 +27,9 @@ function App() {
         <Route path="/home">
           <Home></Home>
         </Route>
-        <Route path="/about">
+        <PrivetRoute path="/about">
         <About></About>
-        </Route>
+        </PrivetRoute>
         <Route path="/services">
         <Services></Services>
         </Route>
@@ -37,9 +37,9 @@ function App() {
         path="/bookService/:id">
          <ServiceDetail></ServiceDetail>
         </PrivetRoute>
-        <Route path="/news">
+        <PrivetRoute path="/news">
           <News></News>
-        </Route>
+        </PrivetRoute>
         <Route path="/login">
         <Login></Login>
         </Route>

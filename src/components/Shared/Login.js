@@ -23,7 +23,9 @@ const Login = () => {
                         <label htmlFor="" className="text-danger">Forgot your password?</label>
                     </div>
                     <div className="mt-3">
+                        {/* <Link to="/home"> */}
                         <input className="bg-danger" type="submit" value="submit" />
+                        {/* </Link> */}
                     </div>
                     <p className="mt-3">new to dental-clinic?<Link to="/register"><span className="text-white">Create Account</span></Link></p>
                     <br />
